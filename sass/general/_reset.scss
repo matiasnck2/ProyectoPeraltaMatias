@@ -1,0 +1,17 @@
+@import "../utilidades/variables";
+
+
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.logoTamaño{
+    width: 40vh; 
+}
+body{
+    background-color: $color-princinpal;
+}

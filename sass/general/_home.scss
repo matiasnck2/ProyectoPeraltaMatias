@@ -1,0 +1,134 @@
+// IMPORT MIXIN
+
+@import "../utilidades/mixin";
+
+//ESTILOS HEADER
+
+header{
+    .blue-bg{background-color: $color-bootstrap-menu}
+    .menu-bg{background-color: white}
+    .a-menu{color: $color-bootstrap-menu}
+    .a-menu:hover{color: $color-bootstrap-hover}
+    .nav-link{@include nav-link}
+    .nav-link:hover{color: $color-bootstrap-hover}
+}
+
+//ESTILOS MAIN
+
+main{
+    @include main;
+
+    .producto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: $color-bootstrap-hover;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 240px; 
+        text-align: center;
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+        }
+        h3{
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 0.5rem;
+        }
+        img:hover{
+            transform: scale(1.05); 
+            transition: transform 0.5s ease; 
+        }
+    }
+
+
+
+
+
+     @media screen and (max-width: 600px) {
+         @include grid-columns(1); /* Una columna en celular */
+
+       }
+    
+       @media screen and (min-width: 600px) {
+         @include grid-columns(2); /* Dos columnas en tablets */
+
+       }
+    
+       @media screen and (min-width: 1024px) {
+         @include grid-columns(3); /* Tres columnas en desktop */
+
+       }
+}
+
+//ESTILOS SECTION
+
+section{
+    @include section;
+    .portada-inicio {
+        flex-direction: column;  
+        text-align: center;      
+        width: 100%;
+        height: 100vh;          
+        padding: 20px;
+    }
+    
+    .portada {
+        width: 100%;
+        max-width: 1930px;       
+        height: auto;            
+        max-height: 500px;    
+    }
+    
+    .texto-portada-inicio {
+        color: $color-portada-inicio;
+        max-width: 800px;  
+        padding: 20px;
+    }
+    .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+    
+    .mapa iframe {
+        width: 90%; 
+        max-width: 600px; 
+        height: 400px; 
+        border-radius: 10px; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.247);
+        
+    }
+    .contacto-info {
+        text-align: center;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .contacto-info h2 {
+        color: $color-bootstrap-menu;
+    }
+    
+    .contacto-info p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    
+}
+
+//ESTILOS FOOTER
+
+footer{
+    @include footer;
+}
+

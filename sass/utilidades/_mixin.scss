@@ -1,0 +1,44 @@
+@import "../utilidades/variables";
+
+//MIXIN PARA HEADER
+
+@mixin nav-link{
+    font-size: 16px;
+    color: $color-default !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+//MIXIN PARA MAIN
+
+@mixin main {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center; 
+}
+
+@mixin section{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2rem;
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center; 
+}
+
+//MIXIN PARA TAMAÑO PANTALLAS
+
+@mixin grid-columns($columna) {
+    grid-template-columns: repeat($columna, 1fr);
+  }
+
+//MIXIN PARA FOOTER
+
+@mixin footer{
+    background-color: #24282c;
+    text-align: center;
+    padding: 15px;
+    color: $color-default;
+    font-size: 11%;
+}

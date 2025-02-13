@@ -1,0 +1,4 @@
+Buenas,todo bien? No tuve tiempo de realizar las correcciones que se nombraron en la entrega anterior, para la entrega final voy a aplicar todos los consejos que se dieron, en el proyecto de ahora se aplico lo vi en las ultimas dos clases. Muchas gracias!
+
+
+sass --watch sass/main.scss css/style.css
